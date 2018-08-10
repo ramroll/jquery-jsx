@@ -40,7 +40,7 @@ plugins : [
 ## Example 1: jsx->html
 
 ```
-import jsx from './index'
+import jsx from 'jsx-doc'
 
 const html = <div>
   <ul id='a123' style='background-color:blue'>
@@ -59,7 +59,7 @@ const html = <div>
 
 
 ```
-import jsx from './index'
+import jsx from 'jsx-doc'
 
 const liList = ['a', 'b', 'c', 'd'].map(k => <li>{k}</li>)
 const html = <div>
