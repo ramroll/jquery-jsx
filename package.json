@@ -1,6 +1,6 @@
 {
   "name": "jsx-doc",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -15,12 +15,15 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-loader": "^7.1.5",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "jquery": "^3.3.1",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "jsx-doc": "^1.0.4"
   }
 }
