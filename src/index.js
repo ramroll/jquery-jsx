@@ -1,4 +1,6 @@
-export default function (tagName, props, children) {
+export default function (tagName, props, ...children) {
+
+  children = [].concat(...children)
 
   props = props || {}
   const element = document.createElement(tagName)
@@ -8,15 +10,10 @@ export default function (tagName, props, children) {
     element.setAttribute(key, props[key])
   }
 
-
   if (children) {
-    if (Array.isArray(children)) {
-      children.forEach(child => {
-        appendChild(element, child)
-      })
-    } else {
-      appendChild(element, children)
-    }
+    children.forEach(child => {
+      appendChild(element, child)
+    })
   }
   return element
 }
