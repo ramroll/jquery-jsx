@@ -9,13 +9,14 @@ export default function (tagName, props, children) {
   }
 
 
-  if(Array.isArray(children)) {
-
-    children.forEach(child=> {
-      appendChild(element, child)
-    })
-  } else {
-    appendChild(element, children)
+  if (children) {
+    if (Array.isArray(children)) {
+      children.forEach(child => {
+        appendChild(element, child)
+      })
+    } else {
+      appendChild(element, children)
+    }
   }
   return element
 }

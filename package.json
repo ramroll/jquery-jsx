@@ -1,6 +1,6 @@
 {
   "name": "jsx-doc",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -9,11 +9,13 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-transform-react-jsx": "^6.24.1"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "jquery": "^3.3.1",
