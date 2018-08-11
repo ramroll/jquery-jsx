@@ -2391,6 +2391,12 @@ jsx-doc@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/jsx-doc/-/jsx-doc-1.0.4.tgz#630cebb481f374f35d9dcc4d2800607697d176b4"
 
+jsx-doc@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/jsx-doc/-/jsx-doc-1.0.5.tgz#6c38e09514ad60651774fe224ec242a56086782f"
+  dependencies:
+    jsx-doc "^1.0.4"
+
 killable@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/killable/download/killable-1.0.0.tgz#da8b84bd47de5395878f95d64d02f2449fe05e6b"
