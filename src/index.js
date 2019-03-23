@@ -7,7 +7,12 @@ export default function (tagName, props, ...children) {
   const propNames = Object.getOwnPropertyNames(props)
 
   for(const key of propNames) {
-    element.setAttribute(key, props[key])
+    if(key === 'dangerouslySetInnerHTML') {
+      const innerHtml = props[key].__html
+      element.innerHTML= innerHtml
+    } else {
+      element.setAttribute(key, props[key])
+    }
   }
 
   if (children) {
